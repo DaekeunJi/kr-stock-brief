@@ -61,6 +61,10 @@ section h2 {
   font-size: 15px; font-weight: 600;
 }
 .row1 .ticker { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ticker-link { color: inherit; text-decoration: none; border-bottom: 1px dotted rgba(179, 188, 205, 0.35); }
+.ticker-link:hover, .ticker-link:active { border-bottom-color: currentColor; }
+.pills .chip-pill .ticker-link { border-bottom: none; }
+.pills .chip-pill:has(.ticker-link:active) { background: #1c2230; }
 .row1 .num { font-variant-numeric: tabular-nums; font-weight: 700; }
 .row2 { font-size: 13px; color: #b3bccd; margin-top: 4px; }
 .row2.muted { color: #8a93a4; font-size: 12px; }
@@ -105,6 +109,8 @@ footer {
   .num-table th { color: #5a6273; }
   .label { color: #5a6273; }
   .pills .chip-pill { background: #ffffff; border-color: #e3e7ee; color: #1a1d24; }
+  .ticker-link { border-bottom-color: rgba(90, 98, 115, 0.35); }
+  .pills .chip-pill:has(.ticker-link:active) { background: #eef0f4; }
   .chip { background: #eef0f4; color: #5a6273; }
   .chip.buy { background: #dcfce7; color: #166534; }
   .chip.sell { background: #fee2e2; color: #991b1b; }
@@ -115,7 +121,7 @@ footer {
 <body>
 <header>
   <h1>KR 시장 brief</h1>
-  <div class="meta">2026-04-30 Thu · 2026-04-30 21:59 대한민국 표준시</div>
+  <div class="meta">2026-04-30 Thu · 2026-04-30 22:19 대한민국 표준시</div>
   <div class="health"><span class="chip warn">라이브 single_signal_fallback</span></div>
 </header>
 <main>
@@ -140,7 +146,7 @@ footer {
 <li class="card sig-sell">
   <div class="row1">
     <span class="chip sell">SELL</span>
-    <span class="ticker">경동나비엔</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/009450/total">경동나비엔</a></span>
     <span class="num up">+12.94%</span>
   </div>
   <div class="row2">하락 패턴: marubozu (점수 70)</div>
@@ -148,7 +154,7 @@ footer {
 <li class="card sig-sell">
   <div class="row1">
     <span class="chip sell">SELL</span>
-    <span class="ticker">한온시스템</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/018880/total">한온시스템</a></span>
     <span class="num down">-1.63%</span>
   </div>
   <div class="row2">하락 패턴: tweezer_top (점수 46)</div>
@@ -159,7 +165,7 @@ footer {
   <ul class="cards">
 <li class="card">
   <div class="row1">
-    <span class="ticker">티케이케미칼</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/104480/total">티케이케미칼</a></span>
     <span class="num">41.1</span>
   </div>
   <div class="row2">P — · S 100.0 · F 50.0</div>
@@ -167,7 +173,7 @@ footer {
 </li>
 <li class="card">
   <div class="row1">
-    <span class="ticker">KG케미칼</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/001390/total">KG케미칼</a></span>
     <span class="num">38.1</span>
   </div>
   <div class="row2">P — · S 88.4 · F 50.0</div>
@@ -175,7 +181,7 @@ footer {
 </li>
 <li class="card">
   <div class="row1">
-    <span class="ticker">쿠쿠홀딩스</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/192400/total">쿠쿠홀딩스</a></span>
     <span class="num">37.4</span>
   </div>
   <div class="row2">P 85.6 · S — · F 50.0</div>
@@ -183,7 +189,7 @@ footer {
 </li>
 <li class="card">
   <div class="row1">
-    <span class="ticker">서전기전</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/051905/total">LG생활건강우</a></span>
     <span class="num">37.2</span>
   </div>
   <div class="row2">P 84.7 · S — · F 50.0</div>
@@ -191,7 +197,7 @@ footer {
 </li>
 <li class="card">
   <div class="row1">
-    <span class="ticker">LG생활건강우</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/189860/total">서전기전</a></span>
     <span class="num">37.2</span>
   </div>
   <div class="row2">P 84.7 · S — · F 50.0</div>
@@ -199,7 +205,7 @@ footer {
 </li>
 <li class="card">
   <div class="row1">
-    <span class="ticker">SK</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/034730/total">SK</a></span>
     <span class="num">37.0</span>
   </div>
   <div class="row2">P 84.0 · S — · F 50.0</div>
@@ -207,7 +213,7 @@ footer {
 </li>
 <li class="card">
   <div class="row1">
-    <span class="ticker">두산우</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/000155/total">두산우</a></span>
     <span class="num">36.7</span>
   </div>
   <div class="row2">P 82.8 · S — · F 50.0</div>
@@ -215,7 +221,7 @@ footer {
 </li>
 <li class="card">
   <div class="row1">
-    <span class="ticker">선광</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/003100/total">선광</a></span>
     <span class="num">34.5</span>
   </div>
   <div class="row2">P 84.3 · S — · F 40.0</div>
@@ -223,7 +229,7 @@ footer {
 </li>
 <li class="card">
   <div class="row1">
-    <span class="ticker">스튜디오미르</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/408900/total">스튜디오미르</a></span>
     <span class="num">33.4</span>
   </div>
   <div class="row2">P — · S 100.0 · F 20.0</div>
@@ -231,7 +237,7 @@ footer {
 </li>
 <li class="card">
   <div class="row1">
-    <span class="ticker">선도전기</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/007610/total">선도전기</a></span>
     <span class="num">33.4</span>
   </div>
   <div class="row2">P — · S 100.0 · F 20.0</div>
@@ -239,7 +245,7 @@ footer {
 </li>
 <li class="card">
   <div class="row1">
-    <span class="ticker">DN오토모티브</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/007340/total">DN오토모티브</a></span>
     <span class="num">32.9</span>
   </div>
   <div class="row2">P — · S 87.8 · F 30.0</div>
@@ -247,7 +253,7 @@ footer {
 </li>
 <li class="card">
   <div class="row1">
-    <span class="ticker">미래반도체</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/254490/total">미래반도체</a></span>
     <span class="num">32.2</span>
   </div>
   <div class="row2">P — · S 95.0 · F 20.0</div>
@@ -255,7 +261,7 @@ footer {
 </li>
 <li class="card">
   <div class="row1">
-    <span class="ticker">노바렉스</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/194700/total">노바렉스</a></span>
     <span class="num">31.8</span>
   </div>
   <div class="row2">P 83.4 · S — · F 30.0</div>
@@ -263,7 +269,7 @@ footer {
 </li>
 <li class="card">
   <div class="row1">
-    <span class="ticker">지앤비에스 에코</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/382800/total">지앤비에스 에코</a></span>
     <span class="num">31.7</span>
   </div>
   <div class="row2">P — · S 93.2 · F 20.0</div>
@@ -271,7 +277,7 @@ footer {
 </li>
 <li class="card">
   <div class="row1">
-    <span class="ticker">한국석유</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/004090/total">한국석유</a></span>
     <span class="num">30.3</span>
   </div>
   <div class="row2">P 87.8 · S — · F 20.0</div>
@@ -284,7 +290,7 @@ footer {
 <li class="card sig-warn">
   <div class="row1">
     <span class="chip warn">⚡ 급등</span>
-    <span class="ticker">선도전기</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/007610/total">선도전기</a></span>
     <span class="num">100.0</span>
   </div>
   <div class="row2">목표 <span class="up">+17.7%</span> · 손절 <span class="down">-15.0%</span></div>
@@ -293,7 +299,7 @@ footer {
 <li class="card sig-warn">
   <div class="row1">
     <span class="chip warn">⚡ 급등</span>
-    <span class="ticker">티케이케미칼</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/104480/total">티케이케미칼</a></span>
     <span class="num">100.0</span>
   </div>
   <div class="row2">목표 <span class="up">+14.1%</span> · 손절 <span class="down">-5.8%</span></div>
@@ -302,7 +308,7 @@ footer {
 <li class="card sig-warn">
   <div class="row1">
     <span class="chip warn">⚡ 급등</span>
-    <span class="ticker">스튜디오미르</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/408900/total">스튜디오미르</a></span>
     <span class="num">100.0</span>
   </div>
   <div class="row2">목표 <span class="up">+15.9%</span> · 손절 <span class="down">-5.3%</span></div>
@@ -311,7 +317,7 @@ footer {
 <li class="card sig-warn">
   <div class="row1">
     <span class="chip warn">⚡ 급등</span>
-    <span class="ticker">미래반도체</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/254490/total">미래반도체</a></span>
     <span class="num">95.0</span>
   </div>
   <div class="row2">목표 <span class="up">+13.2%</span> · 손절 <span class="down">-6.3%</span></div>
@@ -320,7 +326,7 @@ footer {
 <li class="card sig-warn">
   <div class="row1">
     <span class="chip warn">⚡ 급등</span>
-    <span class="ticker">지앤비에스 에코</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/382800/total">지앤비에스 에코</a></span>
     <span class="num">93.2</span>
   </div>
   <div class="row2">목표 <span class="up">+17.4%</span> · 손절 <span class="down">-8.9%</span></div>
@@ -329,7 +335,7 @@ footer {
 <li class="card sig-warn">
   <div class="row1">
     <span class="chip warn">⚡ 급등</span>
-    <span class="ticker">KG케미칼</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/001390/total">KG케미칼</a></span>
     <span class="num">88.4</span>
   </div>
   <div class="row2">목표 <span class="up">+12.6%</span> · 손절 <span class="down">-4.6%</span></div>
@@ -338,7 +344,7 @@ footer {
 <li class="card sig-warn">
   <div class="row1">
     <span class="chip warn">⚡ 급등</span>
-    <span class="ticker">송원산업</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/004430/total">송원산업</a></span>
     <span class="num">87.8</span>
   </div>
   <div class="row2">목표 <span class="up">+12.6%</span> · 손절 <span class="down">-5.5%</span></div>
@@ -347,7 +353,7 @@ footer {
 <li class="card sig-warn">
   <div class="row1">
     <span class="chip warn">⚡ 급등</span>
-    <span class="ticker">DN오토모티브</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/007340/total">DN오토모티브</a></span>
     <span class="num">87.8</span>
   </div>
   <div class="row2">목표 <span class="up">+14.4%</span> · 손절 <span class="down">-6.1%</span></div>
@@ -356,7 +362,7 @@ footer {
 <li class="card sig-warn">
   <div class="row1">
     <span class="chip warn">⚡ 급등</span>
-    <span class="ticker">케이엔솔</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/053080/total">케이엔솔</a></span>
     <span class="num">87.0</span>
   </div>
   <div class="row2">목표 <span class="up">+21.0%</span> · 손절 <span class="down">-5.2%</span></div>
@@ -365,7 +371,7 @@ footer {
 <li class="card sig-warn">
   <div class="row1">
     <span class="chip warn">⚡ 급등</span>
-    <span class="ticker">GS글로벌</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/001250/total">GS글로벌</a></span>
     <span class="num">86.7</span>
   </div>
   <div class="row2">목표 <span class="up">+17.1%</span> · 손절 <span class="down">-8.2%</span></div>
@@ -378,7 +384,7 @@ footer {
 <li class="card sig-buy">
   <div class="row1">
     <span class="chip buy">📈 패턴</span>
-    <span class="ticker">한국석유</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/004090/total">한국석유</a></span>
     <span class="num">87.8</span>
   </div>
   <div class="row2 muted">morning_star · ML 58%</div>
@@ -386,7 +392,7 @@ footer {
 <li class="card sig-buy">
   <div class="row1">
     <span class="chip buy">📈 패턴</span>
-    <span class="ticker">쿠쿠홀딩스</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/192400/total">쿠쿠홀딩스</a></span>
     <span class="num">85.6</span>
   </div>
   <div class="row2 muted">bullish_engulfing · ML 60%</div>
@@ -394,7 +400,7 @@ footer {
 <li class="card sig-buy">
   <div class="row1">
     <span class="chip buy">📈 패턴</span>
-    <span class="ticker">LG생활건강우</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/051905/total">LG생활건강우</a></span>
     <span class="num">84.7</span>
   </div>
   <div class="row2 muted">bullish_engulfing · ML 52%</div>
@@ -402,7 +408,7 @@ footer {
 <li class="card sig-buy">
   <div class="row1">
     <span class="chip buy">📈 패턴</span>
-    <span class="ticker">서전기전</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/189860/total">서전기전</a></span>
     <span class="num">84.7</span>
   </div>
   <div class="row2 muted">bullish_engulfing · ML 56%</div>
@@ -410,7 +416,7 @@ footer {
 <li class="card sig-buy">
   <div class="row1">
     <span class="chip buy">📈 패턴</span>
-    <span class="ticker">드림텍</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/192650/total">드림텍</a></span>
     <span class="num">84.6</span>
   </div>
   <div class="row2 muted">bullish_harami · ML 40%</div>
@@ -418,7 +424,7 @@ footer {
 <li class="card sig-buy">
   <div class="row1">
     <span class="chip buy">📈 패턴</span>
-    <span class="ticker">선광</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/003100/total">선광</a></span>
     <span class="num">84.3</span>
   </div>
   <div class="row2 muted">three_white_soldiers · ML 39%</div>
@@ -426,7 +432,7 @@ footer {
 <li class="card sig-buy">
   <div class="row1">
     <span class="chip buy">📈 패턴</span>
-    <span class="ticker">SK</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/034730/total">SK</a></span>
     <span class="num">84.0</span>
   </div>
   <div class="row2 muted">bullish_engulfing · ML 51%</div>
@@ -434,7 +440,7 @@ footer {
 <li class="card sig-buy">
   <div class="row1">
     <span class="chip buy">📈 패턴</span>
-    <span class="ticker">오름테라퓨틱</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/475830/total">오름테라퓨틱</a></span>
     <span class="num">83.7</span>
   </div>
   <div class="row2 muted">three_white_soldiers · ML 48%</div>
@@ -442,7 +448,7 @@ footer {
 <li class="card sig-buy">
   <div class="row1">
     <span class="chip buy">📈 패턴</span>
-    <span class="ticker">노바렉스</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/194700/total">노바렉스</a></span>
     <span class="num">83.4</span>
   </div>
   <div class="row2 muted">bullish_engulfing · ML 62%</div>
@@ -450,15 +456,11 @@ footer {
 <li class="card sig-buy">
   <div class="row1">
     <span class="chip buy">📈 패턴</span>
-    <span class="ticker">경동인베스트</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/012320/total">경동인베스트</a></span>
     <span class="num">83.3</span>
   </div>
   <div class="row2 muted">bullish_engulfing · ML 60%</div>
 </li></ul>
-</section>
-<section>
-  <h2>GA 합의 종목</h2>
-  <ul class="pills"><li class="chip-pill">롯데손해보험</li><li class="chip-pill">일정실업</li><li class="chip-pill">롤링스톤</li><li class="chip-pill">DL</li><li class="chip-pill">엘앤에프</li><li class="chip-pill">플루토스</li></ul>
 </section>
 <section>
   <h2>테마 모멘텀</h2>
