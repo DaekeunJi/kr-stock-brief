@@ -10,7 +10,7 @@
 <link rel="manifest" href="/api/v1/briefing/mobile/manifest.json">
 <link rel="icon" type="image/svg+xml" href="/api/v1/briefing/mobile/icon.svg">
 <link rel="apple-touch-icon" href="/api/v1/briefing/mobile/icon.svg">
-<title>KR Brief · 2026-09-05 Sat</title>
+<title>KR Brief · 2026-09-06 Sun</title>
 <style>
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 html, body { margin: 0; padding: 0; }
@@ -126,8 +126,8 @@ footer {
 </div>
 <header>
   <h1>KR 시장 brief</h1>
-  <div class="meta">2026-09-05 Sat · 2026-09-05 22:26 대한민국 표준시</div>
-  <div class="health"><span class="chip warn">라이브 single_signal_fallback</span><span class="chip buy">drift OK</span></div>
+  <div class="meta">2026-09-06 Sun · 2026-09-06 19:04 대한민국 표준시</div>
+  <div class="health"><span class="chip warn">라이브 single_signal_fallback</span><span class="chip warn">경고 1개</span><span class="chip sell">drift hard: ga_strategy_version</span></div>
 </header>
 <main>
 
@@ -239,19 +239,19 @@ footer {
 </li>
 <li class="card">
   <div class="row1">
-    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/265520/total">AP시스템</a></span>
-    <span class="num">33.3</span>
-  </div>
-  <div class="row2">P 91.3 · S — · F 30.0</div>
-  <div class="row2 muted">패턴 bullish_engulfing</div>
-</li>
-<li class="card">
-  <div class="row1">
     <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/047050/total">포스코인터내셔널</a></span>
     <span class="num">31.0</span>
   </div>
   <div class="row2">P 92.1 · S — · F 20.0</div>
   <div class="row2 muted">패턴 hammer</div>
+</li>
+<li class="card">
+  <div class="row1">
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/265520/total">AP시스템</a></span>
+    <span class="num">30.8</span>
+  </div>
+  <div class="row2">P 91.3 · S — · F 20.0</div>
+  <div class="row2 muted">패턴 bullish_engulfing</div>
 </li>
 <li class="card">
   <div class="row1">
@@ -295,6 +295,14 @@ footer {
 </li>
 <li class="card">
   <div class="row1">
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/001440/total">대한전선</a></span>
+    <span class="num">30.3</span>
+  </div>
+  <div class="row2">P 89.6 · S — · F 20.0</div>
+  <div class="row2 muted">패턴 three_white_soldiers</div>
+</li>
+<li class="card">
+  <div class="row1">
     <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/062040/total">산일전기</a></span>
     <span class="num">30.3</span>
   </div>
@@ -308,14 +316,6 @@ footer {
   </div>
   <div class="row2">P 89.4 · S — · F 20.0</div>
   <div class="row2 muted">패턴 bullish_engulfing</div>
-</li>
-<li class="card">
-  <div class="row1">
-    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/001440/total">대한전선</a></span>
-    <span class="num">30.3</span>
-  </div>
-  <div class="row2">P 89.6 · S — · F 20.0</div>
-  <div class="row2 muted">패턴 three_white_soldiers</div>
 </li>
 <li class="card">
   <div class="row1">
@@ -542,7 +542,7 @@ if ('serviceWorker' in navigator) {
    발행일(KST) != 열람일(KST)이고 열람 시각이 06:40 KST 이후면 경고. */
 (function() {
   try {
-    var pub = "2026-09-05 Sat".slice(0, 10);
+    var pub = "2026-09-06 Sun".slice(0, 10);
     /* epoch+9h 후 UTC 필드 = KST (클라이언트 타임존 무관) */
     var kst = new Date(Date.now() + 9 * 3600 * 1000);
     var today = kst.toISOString().slice(0, 10);
