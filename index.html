@@ -10,7 +10,7 @@
 <link rel="manifest" href="/api/v1/briefing/mobile/manifest.json">
 <link rel="icon" type="image/svg+xml" href="/api/v1/briefing/mobile/icon.svg">
 <link rel="apple-touch-icon" href="/api/v1/briefing/mobile/icon.svg">
-<title>KR Brief · 2026-09-17 Thu</title>
+<title>KR Brief · 2026-09-18 Fri</title>
 <style>
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 html, body { margin: 0; padding: 0; }
@@ -126,7 +126,7 @@ footer {
 </div>
 <header>
   <h1>KR 시장 brief</h1>
-  <div class="meta">2026-09-17 Thu · 2026-09-17 22:18 대한민국 표준시</div>
+  <div class="meta">2026-09-18 Fri · 2026-09-18 06:30 대한민국 표준시</div>
   <div class="health"><span class="chip warn">라이브 single_signal_fallback</span><span class="chip warn">경고 2개</span><span class="chip sell">drift hard: data_version, ml_model_version</span></div>
 </header>
 <main>
@@ -291,14 +291,6 @@ footer {
 </li>
 <li class="card">
   <div class="row1">
-    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/243070/total">휴온스</a></span>
-    <span class="num">28.5</span>
-  </div>
-  <div class="row2">P 82.5 · S — · F 20.0</div>
-  <div class="row2 muted">패턴 tweezer_bottom</div>
-</li>
-<li class="card">
-  <div class="row1">
     <span class="ticker">삼성에피스홀딩스</span>
     <span class="num">28.4</span>
   </div>
@@ -339,16 +331,20 @@ footer {
 </li>
 <li class="card">
   <div class="row1">
-    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/084650/total">랩지노믹스</a></span>
-    <span class="num">27.7</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/009420/total">한올바이오파마</a></span>
+    <span class="num">27.6</span>
   </div>
-  <div class="row2">P 79.4 · S — · F 20.0</div>
-  <div class="row2 muted">패턴 double_bottom</div>
+  <div class="row2">P 78.9 · S — · F 20.0</div>
+  <div class="row2 muted">패턴 inverted_hammer</div>
+</li>
+<li class="card">
+  <div class="row1">
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/271560/total">오리온</a></span>
+    <span class="num">27.6</span>
+  </div>
+  <div class="row2">P 79.0 · S — · F 20.0</div>
+  <div class="row2 muted">패턴 bullish_harami</div>
 </li></ul>
-</section>
-<section>
-  <h2>GA 합의 종목</h2>
-  <ul class="pills"><li class="chip-pill"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/215000/total">골프존</a></li><li class="chip-pill"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/340810/total">시선AI</a></li></ul>
 </section>
 <section>
   <h2>테마 모멘텀</h2>
@@ -508,14 +504,6 @@ footer {
 <li class="card sig-buy">
   <div class="row1">
     <span class="chip buy">📈 패턴</span>
-    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/243070/total">휴온스</a></span>
-    <span class="num">82.5</span>
-  </div>
-  <div class="row2 muted">tweezer_bottom · ML 74%</div>
-</li>
-<li class="card sig-buy">
-  <div class="row1">
-    <span class="chip buy">📈 패턴</span>
     <span class="ticker">삼성에피스홀딩스</span>
     <span class="num">82.1</span>
   </div>
@@ -556,10 +544,18 @@ footer {
 <li class="card sig-buy">
   <div class="row1">
     <span class="chip buy">📈 패턴</span>
-    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/084650/total">랩지노믹스</a></span>
-    <span class="num">79.4</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/271560/total">오리온</a></span>
+    <span class="num">79.0</span>
   </div>
-  <div class="row2 muted">double_bottom · ML 74%</div>
+  <div class="row2 muted">bullish_harami · ML 93%</div>
+</li>
+<li class="card sig-buy">
+  <div class="row1">
+    <span class="chip buy">📈 패턴</span>
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/009420/total">한올바이오파마</a></span>
+    <span class="num">78.9</span>
+  </div>
+  <div class="row2 muted">inverted_hammer · ML 71%</div>
 </li></ul>
 </section>
 <section>
@@ -581,7 +577,7 @@ if ('serviceWorker' in navigator) {
    발행일(KST) != 열람일(KST)이고 열람 시각이 06:40 KST 이후면 경고. */
 (function() {
   try {
-    var pub = "2026-09-17 Thu".slice(0, 10);
+    var pub = "2026-09-18 Fri".slice(0, 10);
     /* epoch+9h 후 UTC 필드 = KST (클라이언트 타임존 무관) */
     var kst = new Date(Date.now() + 9 * 3600 * 1000);
     var today = kst.toISOString().slice(0, 10);
