@@ -10,7 +10,7 @@
 <link rel="manifest" href="/api/v1/briefing/mobile/manifest.json">
 <link rel="icon" type="image/svg+xml" href="/api/v1/briefing/mobile/icon.svg">
 <link rel="apple-touch-icon" href="/api/v1/briefing/mobile/icon.svg">
-<title>KR Brief · 2026-10-02 Fri</title>
+<title>KR Brief · 2026-10-06 Tue</title>
 <style>
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 html, body { margin: 0; padding: 0; }
@@ -126,15 +126,15 @@ footer {
 </div>
 <header>
   <h1>KR 시장 brief</h1>
-  <div class="meta">2026-10-02 Fri · 2026-10-02 19:45 대한민국 표준시</div>
+  <div class="meta">2026-10-06 Tue · 2026-10-06 09:05 대한민국 표준시</div>
   <div class="health"><span class="chip warn">라이브 single_signal_fallback</span><span class="chip warn">경고 2개</span><span class="chip sell">drift hard: data_version, ml_model_version</span></div>
 </header>
 <main>
 
 <section>
-  <h2>야간 컨텍스트 <span class="chip hold">neutral</span></h2>
-  <table class="num-table"><tbody><tr><td>S&amp;P 500</td><td class="num">7,666</td><td class="num up">+0.19%</td></tr><tr><td>NASDAQ</td><td class="num">26,872</td><td class="num up">+0.04%</td></tr><tr><td>USD/KRW</td><td class="num">1,357</td><td class="num up">+0.47%</td></tr><tr><td>실현변동성(20d)</td><td class="num">28</td><td>medium</td></tr></tbody></table>
-  <ul class="reasons"><li>야간 평탄</li></ul>
+  <h2>야간 컨텍스트 <span class="chip buy">risk_on</span></h2>
+  <table class="num-table"><tbody><tr><td>S&amp;P 500</td><td class="num">7,723</td><td class="num up">+0.73%</td></tr><tr><td>NASDAQ</td><td class="num">27,191</td><td class="num up">+1.19%</td></tr><tr><td>USD/KRW</td><td class="num">1,357</td><td class="num up">+0.47%</td></tr><tr><td>실현변동성(20d)</td><td class="num">28</td><td>medium</td></tr></tbody></table>
+  <ul class="reasons"><li>US 평균 +0.96% 강세</li></ul>
 </section>
 <section>
   <h2>시장 레짐</h2>
@@ -315,19 +315,19 @@ footer {
 </li>
 <li class="card">
   <div class="row1">
-    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/040350/total">크레오에스지</a></span>
-    <span class="num">29.0</span>
-  </div>
-  <div class="row2">P 84.5 · S — · F 20.0</div>
-  <div class="row2 muted">패턴 bullish_harami</div>
-</li>
-<li class="card">
-  <div class="row1">
     <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/009420/total">한올바이오파마</a></span>
     <span class="num">29.0</span>
   </div>
   <div class="row2">P 84.5 · S — · F 20.0</div>
   <div class="row2 muted">패턴 bullish_engulfing</div>
+</li>
+<li class="card">
+  <div class="row1">
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/040350/total">크레오에스지</a></span>
+    <span class="num">29.0</span>
+  </div>
+  <div class="row2">P 84.5 · S — · F 20.0</div>
+  <div class="row2 muted">패턴 bullish_harami</div>
 </li>
 <li class="card">
   <div class="row1">
@@ -345,6 +345,10 @@ footer {
   <div class="row2">P 83.8 · S — · F 20.0</div>
   <div class="row2 muted">패턴 bullish_engulfing</div>
 </li></ul>
+</section>
+<section>
+  <h2>GA 합의 종목</h2>
+  <ul class="pills"><li class="chip-pill"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/141080/total">리가켐바이오</a></li><li class="chip-pill"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/220100/total">퓨쳐켐</a></li><li class="chip-pill"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/215000/total">골프존</a></li></ul>
 </section>
 <section>
   <h2>테마 모멘텀</h2>
@@ -577,7 +581,7 @@ if ('serviceWorker' in navigator) {
    발행일(KST) != 열람일(KST)이고 열람 시각이 06:40 KST 이후면 경고. */
 (function() {
   try {
-    var pub = "2026-10-02 Fri".slice(0, 10);
+    var pub = "2026-10-06 Tue".slice(0, 10);
     /* epoch+9h 후 UTC 필드 = KST (클라이언트 타임존 무관) */
     var kst = new Date(Date.now() + 9 * 3600 * 1000);
     var today = kst.toISOString().slice(0, 10);
