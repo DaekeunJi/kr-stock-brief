@@ -10,7 +10,7 @@
 <link rel="manifest" href="/api/v1/briefing/mobile/manifest.json">
 <link rel="icon" type="image/svg+xml" href="/api/v1/briefing/mobile/icon.svg">
 <link rel="apple-touch-icon" href="/api/v1/briefing/mobile/icon.svg">
-<title>KR Brief · 2026-11-25 Wed</title>
+<title>KR Brief · 2026-11-26 Thu</title>
 <style>
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 html, body { margin: 0; padding: 0; }
@@ -126,8 +126,8 @@ footer {
 </div>
 <header>
   <h1>KR 시장 brief</h1>
-  <div class="meta">2026-11-25 Wed · 2026-11-25 20:19 대한민국 표준시</div>
-  <div class="health"><span class="chip warn">라이브 single_signal_fallback</span><span class="chip sell">drift hard: pattern_algo_version</span></div>
+  <div class="meta">2026-11-26 Thu · 2026-11-26 09:40 대한민국 표준시</div>
+  <div class="health"><span class="chip warn">라이브 single_signal_fallback</span><span class="chip warn">경고 1개</span><span class="chip sell">drift hard: pattern_algo_version</span></div>
 </header>
 <main>
 
@@ -308,14 +308,6 @@ footer {
 </li>
 <li class="card">
   <div class="row1">
-    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/084370/total">유진테크</a></span>
-    <span class="num">30.0</span>
-  </div>
-  <div class="row2">P 88.8 · S — · F 20.0</div>
-  <div class="row2 muted">패턴 three_white_soldiers</div>
-</li>
-<li class="card">
-  <div class="row1">
     <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/001820/total">삼화콘덴서</a></span>
     <span class="num">30.0</span>
   </div>
@@ -329,6 +321,14 @@ footer {
   </div>
   <div class="row2">P 89.1 · S — · F 20.0</div>
   <div class="row2 muted">패턴 marubozu</div>
+</li>
+<li class="card">
+  <div class="row1">
+    <span class="ticker"><a class="ticker-link" target="_blank" rel="noopener noreferrer" href="https://m.stock.naver.com/domestic/stock/084370/total">유진테크</a></span>
+    <span class="num">30.0</span>
+  </div>
+  <div class="row2">P 88.8 · S — · F 20.0</div>
+  <div class="row2 muted">패턴 three_white_soldiers</div>
 </li>
 <li class="card">
   <div class="row1">
@@ -357,29 +357,29 @@ footer {
     <thead><tr><th>테마</th><th>변동</th><th>↑/↓</th></tr></thead>
     <tbody>
 <tr>
-  <td>홈쇼핑</td>
-  <td class="num up">+4.02%</td>
-  <td class="num muted">3/1</td>
+  <td>스페이스X(SpaceX)</td>
+  <td class="num up">+10.48%</td>
+  <td class="num muted">14/0</td>
 </tr>
 <tr>
-  <td>마이데이터</td>
-  <td class="num up">+3.63%</td>
-  <td class="num muted">8/3</td>
+  <td>우주항공산업(누리호/인공위성 등)</td>
+  <td class="num up">+5.90%</td>
+  <td class="num muted">38/3</td>
 </tr>
 <tr>
-  <td>보안주(정보)</td>
-  <td class="num up">+3.00%</td>
-  <td class="num muted">34/15</td>
+  <td>MLCC(적층세라믹콘덴서)</td>
+  <td class="num up">+5.29%</td>
+  <td class="num muted">11/0</td>
 </tr>
 <tr>
-  <td>재택근무/스마트워크</td>
-  <td class="num up">+2.35%</td>
-  <td class="num muted">7/7</td>
+  <td>반도체 기판(FC-BGA/PCB/MLB 등)</td>
+  <td class="num up">+4.67%</td>
+  <td class="num muted">13/1</td>
 </tr>
 <tr>
-  <td>블록체인</td>
-  <td class="num up">+2.30%</td>
-  <td class="num muted">11/10</td>
+  <td>우주태양광(페로브스카이트 등)</td>
+  <td class="num up">+4.03%</td>
+  <td class="num muted">8/2</td>
 </tr></tbody>
   </table>
 </section>
@@ -564,7 +564,7 @@ if ('serviceWorker' in navigator) {
    발행일(KST) != 열람일(KST)이고 열람 시각이 06:40 KST 이후면 경고. */
 (function() {
   try {
-    var pub = "2026-11-25 Wed".slice(0, 10);
+    var pub = "2026-11-26 Thu".slice(0, 10);
     /* epoch+9h 후 UTC 필드 = KST (클라이언트 타임존 무관) */
     var kst = new Date(Date.now() + 9 * 3600 * 1000);
     var today = kst.toISOString().slice(0, 10);
